@@ -1,13 +1,6 @@
-document.getElementById('nameForm').addEventListener('submit', function(event) {
-  event.preventDefault();
-
-  const fname = document.getElementById('fname').value.trim();
-  const lname = document.getElementById('lname').value.trim();
-
-  if (!fname || !lname) {
-    alert('Please enter both first and last names.');
-    return;
-  }
+function getFormvalue() {
+  const fname = document.querySelector('input[name="fname"]').value.trim();
+  const lname = document.querySelector('input[name="lname"]').value.trim();
 
   alert(`${fname} ${lname}`);
-});
+}
